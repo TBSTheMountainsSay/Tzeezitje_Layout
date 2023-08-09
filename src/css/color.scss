@@ -1,0 +1,13 @@
+$palette: (
+  white: #fff,
+  blue: #3a4574,
+  brown: #d3b47f,
+  black: #000,
+);
+
+$light-theme: (
+  def: map-get($palette, white),
+  back-blue: map_get($palette, blue),
+  contacts: map_get($palette, brown),
+  text: map-get($palette, black),
+);

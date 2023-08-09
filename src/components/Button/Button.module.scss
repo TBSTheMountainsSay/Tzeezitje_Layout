@@ -1,0 +1,13 @@
+.button {
+  background-color: var(--back-blue);
+  width: 27rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    color: var(--def);
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+}
