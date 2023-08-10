@@ -3,6 +3,8 @@
   overflow-x: hidden;
   width: 192rem;
   .img {
+    //background: url('./src/images/Background.jpg');
+    object-fit: cover;
     img {
       position: absolute;
       width: 192rem;
@@ -60,8 +62,17 @@
         line-height: 8.8rem;
       }
     }
-    .button {
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-top: 4rem;
+      .button {
+      }
+      .circles {
+        display: flex;
+        gap: 2.3rem;
+      }
     }
   }
 }

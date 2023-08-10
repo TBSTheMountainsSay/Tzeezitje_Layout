@@ -4,6 +4,7 @@ import styles from './Header.module.scss';
 import Logo from 'src/images/Logo.png';
 import SvgSelector from '../../components/SvgSelector/SvgSelector';
 import Button from '../../components/Button/Button';
+import Circle from '../../components/Circle/Circle';
 
 const Header = () => {
   return (
@@ -34,8 +35,16 @@ const Header = () => {
               A bad day with lunch is better than a good day without it.
             </div>
           </div>
-          <div className={styles.button}>
-            <Button title={'Reserve a table'} />
+          <div className={styles.footer}>
+            <div className={styles.button}>
+              <Button title={'Reserve a table'} />
+            </div>
+            <div className={styles.circles}>
+              <Circle text={'Fb'} />
+              <Circle text={'lg'} />
+              <Circle text={'Tw'} />
+              <Circle text={'Yt'} />
+            </div>
           </div>
         </div>
       </div>
