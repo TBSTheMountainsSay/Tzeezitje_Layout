@@ -4,7 +4,7 @@
 }
 .container {
   margin: 0 auto;
-  width: 117rem;
+  max-width: 117rem;
   overflow: hidden;
   min-height: 100vh;
 }

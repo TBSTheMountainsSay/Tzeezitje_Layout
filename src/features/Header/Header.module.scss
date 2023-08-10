@@ -1,16 +1,9 @@
 .main {
-  height: 100%;
   overflow-x: hidden;
-  width: 192rem;
-  .img {
-    //background: url('./src/images/Background.jpg');
-    object-fit: cover;
-    img {
-      position: absolute;
-      width: 192rem;
-      z-index: -1;
-    }
-  }
+  background-image: url('../../images/Background.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
   .content {
     display: flex;
     flex-direction: column;
@@ -22,7 +15,6 @@
       color: var(--def);
       font-weight: 500;
       justify-content: space-between;
-
       .logo {
         width: 27rem;
       }

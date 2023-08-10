@@ -9,9 +9,6 @@ import Circle from '../../components/Circle/Circle';
 const Header = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.img}>
-        <img src={Background} />
-      </div>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.header}>
