@@ -1,0 +1,43 @@
+.menu {
+  margin-top: 6rem;
+  max-height: 80rem;
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 3.4rem;
+    .left_side {
+    }
+    .right_side {
+      display: flex;
+      gap: 2.2rem;
+      position: relative;
+      .image1 {
+        margin-top: 16rem;
+      }
+      .image2 {
+      }
+      .rectangle {
+        margin-left: 10rem;
+        display: flex;
+        align-self: center;
+        position: absolute;
+        z-index: -1;
+        width: 47rem;
+        height: 50rem;
+        background: var(--def);
+        border: 0.2rem solid var(--contacts);
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .menu {
+    margin: 2rem 1rem;
+    .content {
+      justify-content: center;
+      .right_side {
+        display: none;
+      }
+    }
+  }
+}

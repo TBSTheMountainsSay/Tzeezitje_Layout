@@ -3,6 +3,8 @@ $palette: (
   blue: #3a4574,
   brown: #d3b47f,
   black: #000,
+  grey: #e7e7e7,
+  grey-dark: #808080,
 );
 
 $light-theme: (
@@ -10,4 +12,6 @@ $light-theme: (
   back-blue: map_get($palette, blue),
   contacts: map_get($palette, brown),
   text: map-get($palette, black),
+  line: map_get($palette, grey),
+  text-light: map_get($palette, grey-dark),
 );

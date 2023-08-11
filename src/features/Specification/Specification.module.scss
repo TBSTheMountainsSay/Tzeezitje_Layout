@@ -1,0 +1,56 @@
+.specification {
+  margin-top: -6rem;
+  background-color: var(--back-blue);
+  height: 78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 78.5rem;
+    .quotes {
+      width: 8.3rem;
+      height: 5.8rem;
+    }
+    .title_first {
+      color: var(--contacts);
+      font-weight: 600;
+      font-size: 3.6rem;
+      margin-top: 3.4rem;
+      text-align: center;
+    }
+
+    .title_second {
+      color: var(--def);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 4rem;
+      margin: 2rem 0 4rem 0;
+      text-align: center;
+    }
+
+    .title_third {
+      color: var(--contacts);
+      font-weight: 600;
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .specification {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .specification {
+    margin-top: 4rem;
+    .titles {
+      margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.examples {
+  height: 193rem;
+  margin-top: 8rem;
+  .example_item {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

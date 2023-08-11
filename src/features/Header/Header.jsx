@@ -25,6 +25,7 @@ const Header = () => {
               <SvgSelector id={'phone'} />
               +32 9 282 57 25
             </div>
+            <SvgSelector id={'burger'} className={styles.header_burger} />
           </div>
           <div className={styles.container_info}>
             <div className={styles.container_open}>OPEN EVERYDAY 6AM - 9PM</div>

@@ -1,9 +1,10 @@
 .main {
-  overflow-x: hidden;
+  overflow: hidden;
   background-image: url('../../images/Background.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+  max-height: 90rem;
   .content {
     display: flex;
     flex-direction: column;
@@ -37,6 +38,11 @@
         align-items: center;
         gap: 0.8rem;
       }
+      .header_burger {
+        display: none;
+        fill: var(--def);
+        width: 3rem;
+      }
     }
 
     .container_info {
@@ -64,6 +70,85 @@
       .circles {
         display: flex;
         gap: 2.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    background-size: 125%;
+    .content {
+      .header {
+        margin-top: 1rem;
+        .logo {
+          width: 20rem;
+        }
+        .header_elements {
+          margin-left: 25rem;
+          margin-right: 5rem;
+        }
+      }
+      .container_info {
+        margin-top: 10rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .main {
+    background-size: 175%;
+    .content {
+      .header {
+        margin: 1rem 5rem;
+        .logo {
+          width: 15rem;
+        }
+
+        .header_elements {
+          display: none;
+        }
+        .header_contact {
+          display: none;
+        }
+        .header_burger {
+          display: unset;
+          fill: var(--def);
+          width: 5rem;
+        }
+      }
+      .container_info {
+        margin: 5rem;
+      }
+      .footer {
+        justify-content: center;
+        .circles {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    background-size: 275%;
+    .content {
+      .header {
+        margin: 1rem;
+        .logo {
+          width: 5rem;
+        }
+      }
+
+      .container_info {
+        margin: 1rem;
+        .container_title {
+          font-weight: 700;
+          font-size: 4rem;
+          line-height: 5rem;
+        }
       }
     }
   }
