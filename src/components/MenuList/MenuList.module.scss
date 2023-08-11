@@ -32,3 +32,11 @@
     height: 0.1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .menu_list {
+    .description {
+      justify-content: center;
+    }
+  }
+}

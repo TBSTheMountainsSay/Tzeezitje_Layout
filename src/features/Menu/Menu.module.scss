@@ -1,6 +1,8 @@
 .menu {
-  margin-top: 6rem;
   max-height: 80rem;
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 8rem 0;
   .content {
     display: flex;
     flex-direction: row;
@@ -32,7 +34,7 @@
 }
 @media (max-width: 1024px) {
   .menu {
-    margin: 2rem 1rem;
+    margin: 0 1rem;
     .content {
       justify-content: center;
       .right_side {

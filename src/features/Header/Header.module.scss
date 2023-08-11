@@ -1,13 +1,14 @@
 .main {
-  overflow: hidden;
   background-image: url('../../images/Background.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-  max-height: 90rem;
+  background-size: 100% auto;
+  height: 90rem;
   .content {
     display: flex;
     flex-direction: column;
+    max-width: 117rem;
+    margin: 0 auto;
     .header {
       margin-top: 5.5rem;
       display: flex;
@@ -17,7 +18,9 @@
       font-weight: 500;
       justify-content: space-between;
       .logo {
-        width: 27rem;
+        img {
+          width: 27rem;
+        }
       }
 
       .header_elements {
@@ -38,9 +41,10 @@
         align-items: center;
         gap: 0.8rem;
       }
-      .header_burger {
+      .burger {
         display: none;
         fill: var(--def);
+        stroke: var(--def);
         width: 3rem;
       }
     }
@@ -77,52 +81,58 @@
 
 @media (max-width: 1024px) {
   .main {
-    background-size: 125%;
+    background-size: auto 100%;
+    background-position: center;
     .content {
+      padding: 0 3rem;
       .header {
-        margin-top: 1rem;
-        .logo {
-          width: 20rem;
-        }
+        margin-top: 3rem;
+
         .header_elements {
-          margin-left: 25rem;
+          margin-left: 5rem;
           margin-right: 5rem;
         }
       }
       .container_info {
+        margin-top: 15rem;
+      }
+      .footer {
         margin-top: 10rem;
       }
     }
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 765px) {
   .main {
-    background-size: 175%;
+    background-size: auto;
     .content {
       .header {
-        margin: 1rem 5rem;
+        margin: 3rem 5rem;
         .logo {
-          width: 15rem;
+          img {
+            width: 35rem;
+          }
         }
-
         .header_elements {
           display: none;
         }
         .header_contact {
           display: none;
         }
-        .header_burger {
+        .burger {
           display: unset;
           fill: var(--def);
           width: 5rem;
         }
       }
       .container_info {
-        margin: 5rem;
+        text-align: center;
+        margin: 10rem 5rem;
       }
       .footer {
         justify-content: center;
+        margin-top: 3rem;
         .circles {
           display: none;
         }
@@ -133,22 +143,28 @@
 
 @media (max-width: 480px) {
   .main {
-    background-size: 275%;
     .content {
+      padding: 0 1rem;
       .header {
-        margin: 1rem;
+        margin: 3rem;
         .logo {
-          width: 5rem;
+          img {
+            width: 20rem;
+          }
+        }
+        .burger {
+          width: 4rem;
         }
       }
-
       .container_info {
-        margin: 1rem;
+        margin-top: 10rem;
         .container_title {
           font-weight: 700;
           font-size: 4rem;
           line-height: 5rem;
         }
+      }
+      .footer {
       }
     }
   }

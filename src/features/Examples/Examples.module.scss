@@ -1,9 +1,17 @@
 .examples {
-  height: 193rem;
-  margin-top: 8rem;
+  max-height: 193rem;
+  padding: 8rem 0;
+  max-width: 117rem;
+  margin: 0 auto;
   .example_item {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+}
+
+@media (max-width: 765px) {
+  .examples {
+    margin: 0 1rem;
   }
 }

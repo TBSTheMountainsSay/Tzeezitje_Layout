@@ -1,14 +1,19 @@
 .Carousel {
   background-color: var(--back-blue);
   height: 60rem;
-  margin-top: -10rem;
+  max-height: 60rem;
+
   .wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 117rem;
     .description {
+      display: flex;
       margin-top: 6.8rem;
+      flex-direction: column;
       .title {
         font-weight: 700;
         font-size: 4.8rem;
@@ -22,7 +27,7 @@
         font-size: 1.6rem;
         color: var(--def);
         line-height: 3.2rem;
-        width: 50rem;
+        max-width: 50rem;
       }
     }
     .arrows {
@@ -35,6 +40,29 @@
       .arrow_right {
         width: 7rem;
         stroke: var(--def);
+      }
+    }
+  }
+}
+@media (max-width: 765px) {
+  .Carousel {
+    .wrapper {
+      margin: 0 1rem;
+      .description {
+        width: 100%;
+        align-items: center;
+      }
+      .text {
+        text-align: center;
+        width: unset;
+      }
+    }
+    .arrows {
+      display: none;
+      .arrow_left {
+      }
+
+      .arrow_right {
       }
     }
   }

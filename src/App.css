@@ -2,9 +2,3 @@
   width: 100%;
   height: 100%;
 }
-.container {
-  margin: 0 auto;
-  max-width: 117rem;
-  min-height: 100vh;
-  overflow: hidden;
-}
