@@ -8,14 +8,14 @@
     width: 47rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.6rem;
 
     .title {
       color: var(--txt);
       font-weight: 700;
       font-size: 4rem;
-      height: 8.8rem;
-      position: relative;
+      display: flex;
+      justify-self: center;
     }
 
     .line {
@@ -23,7 +23,7 @@
       height: 0.1rem;
       background-color: var(--contacts);
       color: var(--contacts);
-      margin-left: -5.4rem;
+      margin: 0;
     }
 
     .text {
@@ -65,13 +65,13 @@
     .first_side {
       text-align: center;
       width: 100%;
+      align-items: center;
 
       .line {
         width: 100%;
         margin: 0;
       }
     }
-
     .second_side {
       display: none;
       .image {
