@@ -5,6 +5,7 @@ $palette: (
   black: #000,
   grey: #e7e7e7,
   grey-dark: #808080,
+  greyC: #cccccc,
 );
 
 $light-theme: (
@@ -14,4 +15,5 @@ $light-theme: (
   text: map-get($palette, black),
   line: map_get($palette, grey),
   text-light: map_get($palette, grey-dark),
+  textarea-border: map_get($palette, greyC),
 );

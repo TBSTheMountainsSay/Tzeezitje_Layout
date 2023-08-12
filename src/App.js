@@ -7,6 +7,8 @@ import Menu from './features/Menu/Menu';
 import Specification from './features/Specification/Specification';
 import Examples from './features/Examples/Examples';
 import Carousel from './features/Carousel/Carousel';
+import Footer from './features/Footer/Footer';
+import Map from './features/Map/Map';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Specification />
       <Examples />
       <Carousel />
+      <Footer />
+      <Map />
     </div>
   );
 }
