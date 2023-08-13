@@ -35,15 +35,23 @@
       .arrow_left {
         width: 7rem;
         stroke: var(--def);
+        transition: 0.3s;
       }
-
+      .arrow_left:hover {
+        stroke: var(--contacts);
+      }
       .arrow_right {
         width: 7rem;
         stroke: var(--def);
+        transition: 0.3s;
+      }
+      .arrow_right:hover {
+        stroke: var(--contacts);
       }
     }
   }
 }
+
 @media (max-width: 765px) {
   .Carousel {
     .wrapper {

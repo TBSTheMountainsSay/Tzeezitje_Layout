@@ -32,6 +32,26 @@
 
         .header_element {
           font-size: 1.6rem;
+          transition: 0.3s;
+          cursor: default;
+          position: relative;
+        }
+        .header_element:before {
+          position: absolute;
+          height: 0.3rem;
+          width: 0;
+          background-color: var(--def);
+          content: '';
+          bottom: -1rem;
+          transition: 0.3s;
+          border-radius: 5rem;
+        }
+        .header_element:hover {
+          color: var(--contacts);
+        }
+        .header_element:hover:before {
+          background-color: var(--contacts);
+          width: 100%;
         }
       }
 
@@ -40,12 +60,22 @@
         display: flex;
         align-items: center;
         gap: 0.8rem;
+        .header_contact_svg {
+          stroke: var(--contacts);
+          stroke-width: 1.5;
+        }
       }
       .burger {
         display: none;
         fill: var(--def);
         stroke: var(--def);
         width: 3rem;
+        position: fixed;
+        top: 3rem;
+        right: 6rem;
+      }
+      .burger:hover {
+        fill: var(--contacts);
       }
     }
 
@@ -74,9 +104,18 @@
       .circles {
         display: flex;
         gap: 2.3rem;
+        align-items: center;
       }
     }
   }
+}
+
+.menuAdaptive {
+  display: unset;
+}
+
+.menuAdaptive_disable {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -124,6 +163,9 @@
           display: unset;
           fill: var(--def);
           width: 5rem;
+          filter: drop-shadow(0 0 1px var(--back-blue));
+          transition: 0.3s;
+          top: 3rem;
         }
       }
       .container_info {
@@ -146,7 +188,7 @@
     .content {
       padding: 0 1rem;
       .header {
-        margin: 3rem;
+        margin: 3rem 1rem;
         .logo {
           img {
             width: 20rem;
@@ -154,6 +196,7 @@
         }
         .burger {
           width: 4rem;
+          right: 2rem;
         }
       }
       .container_info {

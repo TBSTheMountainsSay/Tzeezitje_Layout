@@ -554,6 +554,8 @@ const SvgSelector = ({ id, className, style }) => {
 
     checkboxUnchecked: (
       <svg className={className} style={style} viewBox="0 0 400 400">
+        {' '}
+        viewBox="0 0 400 400">
         <circle
           cx="200"
           cy="200"
@@ -605,24 +607,21 @@ const SvgSelector = ({ id, className, style }) => {
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        style={style}
+        strokeWidth="2.2"
       >
         <path
           d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
-          stroke="white"
-          stroke-width="1.5"
           stroke-miterlimit="10"
         />
         <path
           d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5"
-          stroke="white"
-          stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M22 9C22 5.13 18.87 2 15 2"
-          stroke="white"
-          stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -635,10 +634,61 @@ const SvgSelector = ({ id, className, style }) => {
         viewBox="0 0 83 58"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        style={style}
       >
         <path
           d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z"
           fill="#D3B47F"
+        />
+      </svg>
+    ),
+
+    time: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        style={style}
+        strokeWidth="2.2"
+      >
+        <path
+          d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M15.71 15.18L12.61 13.33C12.07 13.01 11.63 12.24 11.63 11.61V7.51001"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    ),
+    email: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        style={style}
+        strokeWidth="2.2"
+      >
+        <path
+          d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     ),
@@ -648,11 +698,11 @@ const SvgSelector = ({ id, className, style }) => {
         height="70"
         viewBox="0 0 70 70"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        style={style}
       >
         <path
           d="M43.8958 11.9L24.8792 30.9166C22.6333 33.1625 22.6333 36.8375 24.8792 39.0833L43.8958 58.1"
-          stroke="white"
           stroke-width="2"
           stroke-miterlimit="10"
           stroke-linecap="round"
@@ -666,65 +716,30 @@ const SvgSelector = ({ id, className, style }) => {
         height="70"
         viewBox="0 0 70 70"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        style={style}
       >
         <path
           d="M26.1042 11.9L45.1209 30.9166C47.3667 33.1625 47.3667 36.8375 45.1209 39.0833L26.1042 58.1"
-          stroke="white"
-          stroke-width="2"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     ),
-    time: (
+    close: (
       <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
+        width="100"
+        height="100"
+        viewBox="0 0 64 64"
         xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        style={style}
       >
         <path
-          d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z"
-          stroke="white"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M15.71 15.18L12.61 13.33C12.07 13.01 11.63 12.24 11.63 11.61V7.51001"
-          stroke="white"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    ),
-    email: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
-          stroke="white"
-          stroke-width="1.5"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9"
-          stroke="white"
-          stroke-width="1.5"
-          stroke-miterlimit="10"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          d="M22.6066 21.3934C22.2161 21.0029 21.5829 21.0029 21.1924 21.3934C20.8019 21.7839 20.8019 22.4171 21.1924 22.8076L22.6066 21.3934ZM40.9914 42.6066C41.3819 42.9971 42.0151 42.9971 42.4056 42.6066C42.7961 42.2161 42.7961 41.5829 42.4056 41.1924L40.9914 42.6066ZM21.1924 41.1924C20.8019 41.5829 20.8019 42.2161 21.1924 42.6066C21.5829 42.9971 22.2161 42.9971 22.6066 42.6066L21.1924 41.1924ZM42.4056 22.8076C42.7961 22.4171 42.7961 21.7839 42.4056 21.3934C42.0151 21.0029 41.3819 21.0029 40.9914 21.3934L42.4056 22.8076ZM21.1924 22.8076L40.9914 42.6066L42.4056 41.1924L22.6066 21.3934L21.1924 22.8076ZM22.6066 42.6066L42.4056 22.8076L40.9914 21.3934L21.1924 41.1924L22.6066 42.6066Z"
+          fill="white"
         />
       </svg>
     ),

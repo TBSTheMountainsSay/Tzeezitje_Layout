@@ -5,14 +5,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--def);
+  border: 2px solid var(--def);
   color: var(--def);
+  transition: 0.3s;
+  cursor: default;
   .text {
     font-weight: 600;
     font-size: 1.6rem;
+    transition: 0.3s;
   }
 }
 .black {
   border: 1px solid var(--text);
   color: var(--text);
+}
+
+.circle:hover {
+  width: 6rem;
+  height: 6rem;
+  .text {
+    font-size: 2rem;
+  }
 }

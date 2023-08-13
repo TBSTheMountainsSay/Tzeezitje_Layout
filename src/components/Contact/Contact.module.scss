@@ -12,8 +12,8 @@
     align-items: center;
     justify-content: center;
     .svg {
-      width: 2.4rem;
-      fill: var(--def);
+      max-width: 2.4rem;
+      max-height: 2.4rem;
       stroke: var(--def);
     }
   }
