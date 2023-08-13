@@ -105,6 +105,7 @@ textarea::placeholder {
 .modal_disable {
   position: fixed;
   transition: 0.5s;
+  z-index: 4;
   bottom: -100%;
   right: 25%;
   left: 25%;
@@ -175,6 +176,6 @@ textarea::placeholder {
 
 @media (max-width: 350px) {
   .modal {
-    bottom: 10%;
+    bottom: 20%;
   }
 }

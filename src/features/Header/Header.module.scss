@@ -113,6 +113,25 @@
   }
 }
 
+.modal {
+  position: fixed;
+  transition: 0.5s;
+  z-index: 4;
+  width: 50%;
+  bottom: 40%;
+  right: 25%;
+  left: 25%;
+}
+
+.modal_disable {
+  position: fixed;
+  transition: 0.5s;
+  z-index: 4;
+  bottom: -100%;
+  right: 25%;
+  left: 25%;
+}
+
 .menuAdaptive {
   position: fixed;
   width: 75%;
@@ -195,11 +214,33 @@
       }
     }
   }
+  .modal {
+    width: 75%;
+    right: 12.5%;
+    left: 12.5%;
+  }
+  .modal_disable {
+    bottom: -100%;
+    width: 75%;
+    right: 12.5%;
+    left: 12.5%;
+  }
 }
 
 @media (max-width: 528px) {
   .menuAdaptive {
     width: 100%;
+  }
+  .modal {
+    width: 95%;
+    right: 2.5%;
+    left: 2.5%;
+  }
+  .modal_disable {
+    bottom: -100%;
+    width: 95%;
+    right: 2.5%;
+    left: 2.5%;
   }
 }
 
@@ -230,5 +271,8 @@
       .footer {
       }
     }
+  }
+  .modal {
+    bottom: 25%;
   }
 }

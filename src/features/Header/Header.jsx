@@ -5,12 +5,19 @@ import SvgSelector from '../../components/SvgSelector/SvgSelector';
 import Button from '../../components/Button/Button';
 import Circle from '../../components/Circle/Circle';
 import MenuAdaptive from '../../components/MenuAdaptive/MenuAdaptive';
+import ModalSend from '../../components/ModalSend/ModalSend';
 
 const Header = () => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
+  const [isModalActive, setIsModalActive] = useState(false);
+
   const handleMenu = () => {
     setIsActiveMenu(!isActiveMenu);
+  };
+
+  const handleActive = () => {
+    setIsModalActive(!isModalActive);
   };
 
   return (
@@ -33,6 +40,16 @@ const Header = () => {
           <button onClick={handleMenu}>
             <SvgSelector id={'burger'} className={styles.burger} />
           </button>
+          <div
+            className={
+              isModalActive === true ? styles.modal : styles.modal_disable
+            }
+          >
+            <ModalSend
+              text={`Thank you for choosing our restaurant. If you have any questions, you can contact this number at any time: +32 9 282 57 25.`}
+              onClick={handleActive}
+            />
+          </div>
         </div>
 
         <div
@@ -52,8 +69,8 @@ const Header = () => {
           </div>
         </div>
         <div className={styles.footer}>
-          <div className={styles.button}>
-            <Button title={'Reserve a table'} />
+          <div className={styles.button} onClick={handleActive}>
+            <Button title={'Reserve a table'} onClick={handleActive} />
           </div>
           <div className={styles.circles}>
             <Circle text={'Fb'} />

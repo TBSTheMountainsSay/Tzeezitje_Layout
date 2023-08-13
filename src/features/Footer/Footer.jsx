@@ -24,6 +24,9 @@ const Footer = ({}) => {
 
   const handleActive = () => {
     setIsModalActive(!isModalActive);
+  };
+
+  const handleClear = () => {
     setNameTextArea('');
     setEmailTextArea('');
     setRequestTextArea('');
@@ -99,7 +102,22 @@ const Footer = ({}) => {
                 isModalActive === true ? styles.modal : styles.modal_disable
               }
             >
-              <ModalSend nameTextArea emailTextArea onClick={handleActive} />
+              {nameTextArea === '' ||
+              emailTextArea === '' ||
+              requestTextArea === '' ? (
+                <ModalSend
+                  text={`Please fill in all fields.`}
+                  onClick={handleActive}
+                />
+              ) : (
+                <ModalSend
+                  text={` Hello, ${nameTextArea}, thank you for your feedback! We are very pleased
+        that you liked the cuisine of our restaurant. We will review your
+        question and send you an answer to your email: ${emailTextArea}.`}
+                  onClick={handleActive}
+                  onLaterClick={handleClear}
+                />
+              )}
             </div>
           </div>
         </div>
