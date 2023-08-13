@@ -35,3 +35,13 @@
     }
   }
 }
+
+@media (max-width: 410px) {
+  .contact {
+    gap: 1rem;
+    .icon {
+      max-width: 4rem;
+      max-height: 4rem;
+    }
+  }
+}

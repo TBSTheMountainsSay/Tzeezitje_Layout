@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Footer.module.scss';
 import Contact from '../../components/Contact/Contact';
 import Button from '../../components/Button/Button';
+import ModalSend from '../../components/ModalSend/ModalSend';
 
 const Footer = ({}) => {
+  const [nameTextArea, setNameTextArea] = useState('');
+  const [emailTextArea, setEmailTextArea] = useState('');
+  const [requestTextArea, setRequestTextArea] = useState('');
+  const [isModalActive, setIsModalActive] = useState(false);
+
+  const handleChangeName = (e) => {
+    setNameTextArea(e.target.value);
+  };
+
+  const handleChangeEmail = (e) => {
+    setEmailTextArea(e.target.value);
+  };
+
+  const handleChangeRequest = (e) => {
+    setRequestTextArea(e.target.value);
+  };
+
+  const handleActive = () => {
+    setIsModalActive(!isModalActive);
+    setNameTextArea('');
+    setEmailTextArea('');
+    setRequestTextArea('');
+  };
+
   return (
     <div className={styles.footer}>
       <div className={styles.communication}>
@@ -37,6 +62,8 @@ const Footer = ({}) => {
                   <textarea
                     placeholder={'Input your name'}
                     className={styles.textarea_horizontal}
+                    value={nameTextArea}
+                    onChange={handleChangeName}
                   />
                 </div>
               </div>
@@ -46,6 +73,8 @@ const Footer = ({}) => {
                   <textarea
                     placeholder={'Input your email'}
                     className={styles.textarea_horizontal}
+                    value={emailTextArea}
+                    onChange={handleChangeEmail}
                   />
                 </div>
               </div>
@@ -57,10 +86,21 @@ const Footer = ({}) => {
                 <textarea
                   placeholder={'Input your special request'}
                   className={styles.textarea_third}
+                  value={requestTextArea}
+                  onChange={handleChangeRequest}
                 />
               </div>
             </div>
-            <Button title={'Send'} />
+            <div onClick={handleActive}>
+              <Button title={'Send'} />
+            </div>
+            <div
+              className={
+                isModalActive === true ? styles.modal : styles.modal_disable
+              }
+            >
+              <ModalSend nameTextArea emailTextArea onClick={handleActive} />
+            </div>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
   padding-top: 40rem;
   max-width: 117rem;
   margin: 0 auto;
+  position: relative;
   .communication {
     display: flex;
     flex-direction: row;
@@ -90,12 +91,56 @@ textarea::placeholder {
   line-height: 2.4rem;
   color: var(--text-light);
 }
+
+.modal {
+  position: fixed;
+  transition: 0.5s;
+  z-index: 4;
+  width: 50%;
+  bottom: 40%;
+  right: 25%;
+  left: 25%;
+}
+
+.modal_disable {
+  position: fixed;
+  transition: 0.5s;
+  bottom: -100%;
+  right: 25%;
+  left: 25%;
+}
+
 @media (max-width: 800px) {
   .footer {
     .communication {
       flex-direction: column;
       align-items: center;
     }
+  }
+  .modal {
+    width: 75%;
+    right: 12.5%;
+    left: 12.5%;
+  }
+  .modal_disable {
+    bottom: -100%;
+    width: 75%;
+    right: 12.5%;
+    left: 12.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    width: 95%;
+    right: 2.5%;
+    left: 2.5%;
+  }
+  .modal_disable {
+    bottom: -100%;
+    width: 95%;
+    right: 2.5%;
+    left: 2.5%;
   }
 }
 
@@ -122,5 +167,14 @@ textarea::placeholder {
         }
       }
     }
+  }
+  .modal {
+    bottom: 25%;
+  }
+}
+
+@media (max-width: 350px) {
+  .modal {
+    bottom: 10%;
   }
 }

@@ -602,8 +602,6 @@ const SvgSelector = ({ id, className, style }) => {
     ),
     phone: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -646,8 +644,6 @@ const SvgSelector = ({ id, className, style }) => {
 
     time: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -669,8 +665,6 @@ const SvgSelector = ({ id, className, style }) => {
     ),
     email: (
       <svg
-        width="24"
-        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
