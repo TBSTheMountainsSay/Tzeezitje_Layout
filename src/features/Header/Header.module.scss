@@ -111,11 +111,21 @@
 }
 
 .menuAdaptive {
-  display: unset;
+  position: fixed;
+  width: 75%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .menuAdaptive_disable {
-  display: none;
+  position: fixed;
+  right: -100%;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
 }
 
 @media (max-width: 1024px) {
@@ -142,7 +152,7 @@
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .main {
     background-size: auto;
     .content {
@@ -180,6 +190,12 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 528px) {
+  .menuAdaptive {
+    width: 100%;
   }
 }
 
