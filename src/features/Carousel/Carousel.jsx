@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Carousel.module.scss';
 import SvgSelector from '../../components/SvgSelector/SvgSelector';
+import CustomCarousel from '../../components/CustomCarousel/CustomCarousel';
 
 const Carousel = ({}) => {
   return (
@@ -17,6 +18,9 @@ const Carousel = ({}) => {
           <SvgSelector id={'arrow_left'} className={styles.arrow_left} />
           <SvgSelector id={'arrow_right'} className={styles.arrow_right} />
         </div>
+      </div>
+      <div className={styles.customCarousel}>
+        <CustomCarousel />
       </div>
     </div>
   );

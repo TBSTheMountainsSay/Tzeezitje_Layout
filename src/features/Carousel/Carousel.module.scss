@@ -2,6 +2,9 @@
   background-color: var(--back-blue);
   height: 60rem;
   max-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 
   .wrapper {
     display: flex;
@@ -9,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    width: 100%;
     max-width: 117rem;
     .description {
       display: flex;
@@ -49,6 +53,8 @@
         stroke: var(--contacts);
       }
     }
+  }
+  customCarousel {
   }
 }
 
