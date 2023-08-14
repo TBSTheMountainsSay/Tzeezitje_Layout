@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e2fdd22.css",
-    "main.js": "/static/js/main.62d75a6f.js",
-    "static/js/787.7d3d693b.chunk.js": "/static/js/787.7d3d693b.chunk.js",
-    "static/media/Background.jpg": "/static/media/Background.bbfedb9a4f0bb48e7be4.jpg",
-    "static/media/Image6.png": "/static/media/Image6.2d716f55abf1a7fba235.png",
-    "static/media/Image7.png": "/static/media/Image7.abb81b140fc6dd83b785.png",
-    "static/media/Image9.png": "/static/media/Image9.25ad4ae05dda3521a8a8.png",
-    "static/media/Image3.jpg": "/static/media/Image3.c5a39305624d94633d05.jpg",
-    "static/media/Image4.jpg": "/static/media/Image4.268bb56ffa59af7cd6cc.jpg",
-    "static/media/Image5.jpg": "/static/media/Image5.08daffa19550429fa8cb.jpg",
-    "static/media/Image2.jpg": "/static/media/Image2.5baf3d9a282621f7d6a4.jpg",
-    "static/media/Image1.jpg": "/static/media/Image1.fd2f9c79116474c68b6e.jpg",
-    "index.html": "/index.html",
-    "main.5e2fdd22.css.map": "/static/css/main.5e2fdd22.css.map",
-    "main.62d75a6f.js.map": "/static/js/main.62d75a6f.js.map",
-    "787.7d3d693b.chunk.js.map": "/static/js/787.7d3d693b.chunk.js.map"
+    "main.css": "/Tzeezitje_Layout/static/css/main.db23159b.css",
+    "main.js": "/Tzeezitje_Layout/static/js/main.a9653d94.js",
+    "static/js/787.7d3d693b.chunk.js": "/Tzeezitje_Layout/static/js/787.7d3d693b.chunk.js",
+    "static/media/Background.jpg": "/Tzeezitje_Layout/static/media/Background.bbfedb9a4f0bb48e7be4.jpg",
+    "static/media/Image6.png": "/Tzeezitje_Layout/static/media/Image6.2d716f55abf1a7fba235.png",
+    "static/media/Image7.png": "/Tzeezitje_Layout/static/media/Image7.abb81b140fc6dd83b785.png",
+    "static/media/Image9.png": "/Tzeezitje_Layout/static/media/Image9.25ad4ae05dda3521a8a8.png",
+    "static/media/Image3.jpg": "/Tzeezitje_Layout/static/media/Image3.c5a39305624d94633d05.jpg",
+    "static/media/Image4.jpg": "/Tzeezitje_Layout/static/media/Image4.268bb56ffa59af7cd6cc.jpg",
+    "static/media/Image5.jpg": "/Tzeezitje_Layout/static/media/Image5.08daffa19550429fa8cb.jpg",
+    "static/media/Image2.jpg": "/Tzeezitje_Layout/static/media/Image2.5baf3d9a282621f7d6a4.jpg",
+    "static/media/Image1.jpg": "/Tzeezitje_Layout/static/media/Image1.fd2f9c79116474c68b6e.jpg",
+    "index.html": "/Tzeezitje_Layout/index.html",
+    "main.db23159b.css.map": "/Tzeezitje_Layout/static/css/main.db23159b.css.map",
+    "main.a9653d94.js.map": "/Tzeezitje_Layout/static/js/main.a9653d94.js.map",
+    "787.7d3d693b.chunk.js.map": "/Tzeezitje_Layout/static/js/787.7d3d693b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e2fdd22.css",
-    "static/js/main.62d75a6f.js"
+    "static/css/main.db23159b.css",
+    "static/js/main.a9653d94.js"
   ]
 }
