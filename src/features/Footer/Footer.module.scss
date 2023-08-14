@@ -147,6 +147,7 @@ textarea::placeholder {
 
 @media (max-width: 480px) {
   .footer {
+    padding-top: 25rem;
     .communication {
       margin: 0 1rem;
       .title {
@@ -170,12 +171,12 @@ textarea::placeholder {
     }
   }
   .modal {
-    bottom: 25%;
+    bottom: 40%;
   }
 }
 
 @media (max-width: 350px) {
   .modal {
-    bottom: 20%;
+    bottom: 35%;
   }
 }

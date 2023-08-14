@@ -697,8 +697,6 @@ const SvgSelector = ({ id, className, style }) => {
       >
         <path
           d="M43.8958 11.9L24.8792 30.9166C22.6333 33.1625 22.6333 36.8375 24.8792 39.0833L43.8958 58.1"
-          stroke-width="2"
-          stroke-miterlimit="10"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -715,8 +713,6 @@ const SvgSelector = ({ id, className, style }) => {
       >
         <path
           d="M26.1042 11.9L45.1209 30.9166C47.3667 33.1625 47.3667 36.8375 45.1209 39.0833L26.1042 58.1"
-          strokeWidth="2"
-          strokeMiterlimit="10"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
