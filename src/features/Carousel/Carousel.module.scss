@@ -132,3 +132,15 @@
     }
   }
 }
+
+@media (max-width: 310px) {
+  .Carousel {
+    .wrapper {
+      .description {
+        .text {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
