@@ -63,12 +63,73 @@
     justify-content: center;
     width: 100%;
     height: 65rem;
-    overflow: hidden;
     gap: 3rem;
+    left: 0;
     .image {
       width: 97rem;
       height: 65rem;
     }
+  }
+  .customCarousel.animationNext {
+    animation: -slideNext forwards;
+  }
+
+  .customCarousel.animationPrev {
+    animation: -slidePrev forwards;
+  }
+
+  @media (max-width: 480px) {
+    .customCarousel.animationNext {
+      animation: -slideNextMobile forwards;
+    }
+    .customCarousel.animationPrev {
+      animation: -slidePrevMobile forwards;
+    }
+  }
+}
+
+@keyframes -slideNext {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -99.525rem;
+  }
+}
+
+@keyframes -slidePrev {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 99.528rem;
+  }
+}
+
+@keyframes -slideNextMobile {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -51rem;
+  }
+}
+
+@keyframes -slidePrev {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 99.528rem;
+  }
+}
+
+@keyframes -slidePrevMobile {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 51rem;
   }
 }
 
